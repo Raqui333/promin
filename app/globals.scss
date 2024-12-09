@@ -1,0 +1,23 @@
+@use '@/app/variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  background-color: $default_background_color;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.icon {
+  filter: invert(100%);
+  margin-right: 0.5rem;
+}

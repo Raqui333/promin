@@ -1,0 +1,26 @@
+@use '@/app/variables' as *;
+
+.button {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  background-color: $main_color;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border-radius: $border_radius;
+  color: white;
+
+  &:not(.disabled):hover {
+    cursor: pointer;
+    filter: brightness(80%)
+  }
+}
+
+.button_label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button_input {
+  display: none;
+}

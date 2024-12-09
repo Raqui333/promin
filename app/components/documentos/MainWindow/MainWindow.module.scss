@@ -1,0 +1,24 @@
+@use '@/app/variables' as *;
+
+.window {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: calc(100% - ($window_margin * 2));
+  background-color: white;
+  margin: $window_margin;
+  padding: 1rem;
+  box-shadow: $default_box_shadow;
+}
+
+.test {
+  background-color: #f4f4f4;
+  padding: 0.3rem;
+  width: 100%;
+  border: 1px solid gray;
+
+  &:hover {
+    filter: brightness(80%)
+  }
+}

@@ -1,0 +1,65 @@
+@use '@/app/variables' as *;
+
+.header {
+  display: flex;
+  justify-content: left;
+  background-color: $main_color;
+  text-decoration: none;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: inherit;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+  }
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  top: 100%;
+  left: 0px;
+  min-width: 200px;
+  box-shadow: $default_box_shadow;
+}
+
+.dropdown_menu_item {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  padding: 0.8rem;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.dropdown {
+  user-select: none;
+}
+
+.dropdown:hover .dropdown_menu {
+  display: block;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  filter: invert(100%);
+}
+
+.dropdown_icon {
+  margin-left: 0.5rem;
+  filter: invert(100%);
+}
