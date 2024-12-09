@@ -22,17 +22,19 @@ This is a **study project** focused on developing an **Electronic Process Manage
 ---
 
 ##  **Project Structure (so far)**
+```bash
 📁 project-root/
-├── 📁 app/ # Using App Router in this project
-│ ├── 📁 components/ # Reusable components
-│ ├── 📁 \*route\*/ # /\*route\*, in App Router every sub-folder with a page.tsx is a route
-│ │ ├── 📄 page.tsx # Default route of the app
-├── 📄 page.tsx # Default route of the app
-├── 📁 public/ # Images and static files
-├── 📄 next.config.ts # Next.js config file
-├── 📄 package.json # Project dependencies and scripts
-├── 📄 README.md # Project description
-└── 📄 tsconfig.json # Typescript config file
+├── app/               # Using App Router in this project
+│   ├── components/    # Reusable components
+│   └── route_name/    # url/<route_name>, in App Router every sub-folder with a page.tsx is a route
+│       └── page.tsx   # Default route of the app
+├── page.tsx           # Default route of the app
+├── public/            # Images and static files
+├── next.config.ts     # Next.js config file
+├── package.json       # Project dependencies and scripts
+├── README.md          # Project description
+└── tsconfig.json      # Typescript config file
+```
 
 ## **How to Run the Project**
 > Make sure you have **Node.js** and **Git** installed on your machine.
