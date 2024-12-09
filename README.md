@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **e-PROMIN**
 
-## Getting Started
+This is a **study project** focused on developing an **Electronic Process Management System** using **Next.js**. The main goal is to improve knowledge of **modern frontend development** and **best development practices**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Project Objectives**
+- Study and apply concepts of **Next.js**.
+- Develop an Electronic Process Management System.
+- Improve code structure and organization.
+- Explore the use of **componentization**, **hooks**, and **API Routes** in Next.js.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **Technologies Used**
+- **Next.js** — React-based framework for server-side and client-side rendering.
+- **React** — Library for building dynamic user interfaces.
+- **CSS Modules / SASS** — For component styling.
+- **Axios / Fetch** — For API consumption.
+- **Git and GitHub** — Version control and remote repository.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+##  **Project Structure (so far)**
+📁 project-root/
+├── 📁 app/ # Using App Router in this project
+│ ├── 📁 components/ # Reusable components
+│ ├── 📁 \*route\*/ # /\*route\*, in App Router every sub-folder with a page.tsx is a route
+│ │ ├── 📄 page.tsx # Default route of the app
+├── 📄 page.tsx # Default route of the app
+├── 📁 public/ # Images and static files
+├── 📄 next.config.ts # Next.js config file
+├── 📄 package.json # Project dependencies and scripts
+├── 📄 README.md # Project description
+└── 📄 tsconfig.json # Typescript config file
 
-To learn more about Next.js, take a look at the following resources:
+## **How to Run the Project**
+> Make sure you have **Node.js** and **Git** installed on your machine.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**:
+   ```bash 
+   git clone https://github.com/Raqui333/promin.git
+   ```
+   
+2. **Go to the project folder**:
+   ```bash 
+   cd promin
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Install dependencies**:
+   ```bash 
+   npm install
+   ```
 
-## Deploy on Vercel
+4. **Run the development server**:
+   ```bash 
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **Access the project in your browser**:
+   ```
+   http://localhost:3000
+   ```
